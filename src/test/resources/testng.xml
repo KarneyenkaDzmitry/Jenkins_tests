@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+    <test name="FirefoxTest">
+        <parameter name="browser" value="Firefox"/>
+        <parameter name="keyProperty" value="webdriver.gecko.driver"/>
+        <parameter name="valueProperty" value=".\\src\\test\\resources\\drivers\\geckodriver.exe"/>
+        <classes>
+            <class name="JenkinsTest"/>
+        </classes>
+    </test>
+    <test name="ChromeTest">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="keyProperty" value="webdriver.chrome.driver"/>
+        <parameter name="valueProperty" value=".\\src\\test\\resources\\drivers\\chromedriver.exe"/>
+        <classes>
+            <class name="JenkinsTest"/>
+        </classes>
+    </test>
+    <!--<test name="InternetExplorerTest">
+        <parameter name="browser" value="InternetExplorer"/>
+        <parameter name="keyProperty" value="webdriver.ie.driver"/>
+        <parameter name="valueProperty" value=".\\src\\test\\resources\\IEDriverServer.exe"/>
+        <classes>
+            <class name="JenkinsTest"/>
+        </classes>
+    </test>
+    <test name="OperaTest">
+        <parameter name="browser" value="Opera"/>
+        <parameter name="keyProperty" value="webdriver.opera.driver"/>
+        <parameter name="valueProperty" value=".\\src\\test\\resources\\operadriver_win32\\operadriver.exe"/>
+        <classes>
+            <class name="JenkinsTest"/>
+        </classes>
+    </test>-->
+</suite>
